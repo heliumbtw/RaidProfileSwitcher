@@ -1,7 +1,7 @@
 local arena_profile = "party";
 local bg_profile = "main";
-local brawl_profile = "main"
-local party_profile = "party"
+local brawl_profile = "main";
+local party_profile = "party";
 local raid_profile = "main";
 
 function switchProfile()
@@ -23,27 +23,27 @@ function switchProfile()
 		end
 	elseif GetNumGroupMembers(LE_PARTY_CATEGORY_INSTANCE) >= 1 then
 	    if GetNumGroupMembers(LE_PARTY_CATEGORY_INSTANCE) > 5 then
-            if GetActiveRaidProfile() ~= raid_profile then
-	            CompactUnitFrameProfiles_ActivateRaidProfile(raid_profile);
-			    print("Activated profile: "..raid_profile)
+                if GetActiveRaidProfile() ~= raid_profile then
+	        	CompactUnitFrameProfiles_ActivateRaidProfile(raid_profile);
+			print("Activated profile: "..raid_profile)
             end
 	    else
 	        if GetActiveRaidProfile() ~= party_profile then
-                CompactUnitFrameProfiles_ActivateRaidProfile(party_profile);
-	            print("Activated profile: "..party_profile)
-            end
+                	CompactUnitFrameProfiles_ActivateRaidProfile(party_profile);
+	        	print("Activated profile: "..party_profile)
+            	end
         end
-    elseif GetNumGroupMembers(LE_PARTY_CATEGORY_HOME) >= 1 then
-        if GetNumGroupMembers(LE_PARTY_CATEGORY_HOME) > 5 then
-            if GetActiveRaidProfile() ~= raid_profile then
-			    CompactUnitFrameProfiles_ActivateRaidProfile(raid_profile);
-			    print("Activated profile: "..raid_profile)
-            end
-	    else
+	elseif GetNumGroupMembers(LE_PARTY_CATEGORY_HOME) >= 1 then
+		if GetNumGroupMembers(LE_PARTY_CATEGORY_HOME) > 5 then
+			if GetActiveRaidProfile() ~= raid_profile then
+				CompactUnitFrameProfiles_ActivateRaidProfile(raid_profile);
+				print("Activated profile: "..raid_profile)
+            	end
+	    	else
 	        if GetActiveRaidProfile() ~= party_profile then
-		        CompactUnitFrameProfiles_ActivateRaidProfile(party_profile);
-			    print("Activated profile: "..party_profile)
-		    end
+				CompactUnitFrameProfiles_ActivateRaidProfile(party_profile);
+				print("Activated profile: "..party_profile)
+			end
 		end
 	end
 end
