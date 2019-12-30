@@ -40,7 +40,7 @@ function switchProfile()
 				print("Activated profile: "..raid_profile)
             	end
 	    	else
-	        if GetActiveRaidProfile() ~= party_profile then
+			if GetActiveRaidProfile() ~= party_profile then
 				CompactUnitFrameProfiles_ActivateRaidProfile(party_profile);
 				print("Activated profile: "..party_profile)
 			end
