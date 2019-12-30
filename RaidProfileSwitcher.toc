@@ -1,0 +1,4 @@
+## Interface: 80205
+## Title: RaidProfileSwitcher
+## Version: 1.0
+core.lua
