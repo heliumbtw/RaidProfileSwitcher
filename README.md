@@ -1,5 +1,5 @@
 # RaidProfileSwitcher
-WoW RaidProfileSwitcher
+World of Warcraft (WoW) RaidProfileSwitcher
 
 This is addon which switch default blizzard UI raid profiles by size of group in all situations.
 
